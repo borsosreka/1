@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Marriages in Romania",
+  "width": "container",
+  "height": 300,
+  "data": {
+    "values": [
+      {"Ani": "2012", "Valoare": 107760},
+      {"Ani": "2013", "Valoare": 107507},
+      {"Ani": "2014", "Valoare": 118075},
+      {"Ani": "2015", "Valoare": 125454},
+      {"Ani": "2016", "Valoare": 133183},
+      {"Ani": "2017", "Valoare": 142613},
+      {"Ani": "2018", "Valoare": 143292},
+      {"Ani": "2019", "Valoare": 128610},
+      {"Ani": "2020", "Valoare": 81343},
+      {"Ani": "2021", "Valoare": 114207},
+      {"Ani": "2022", "Valoare": 118300}
+    ]
+  },
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {"field": "Ani", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Valoare", "type": "quantitative", "title": "Newborn"}
+  },
+  "config": {
+    "background": "white",
+    "font": "Circular Std",
+    "title": {"color": "black", "fontSize": 14, "fontWeight": 400},
+    "legend": {"labelColor": "#b4c8d8"}
+  },
+  "title": {
+    "text": "Marriages in Romania",
+    "subtitle": ["Source: National Institute for Statistics - ROMANIA", ""],
+    "fontSize": 16,
+    "anchor": "start",
+    "dx": 5
+  }
+}
