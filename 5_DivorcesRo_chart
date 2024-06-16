@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Divorces in Romania",
+  "width": "container",
+  "height": 200,
+  "data": {
+    "values": [
+      {"Ani": "2012", "Valoare": 31324},
+      {"Ani": "2013", "Valoare": 28507},
+      {"Ani": "2014", "Valoare": 27188},
+      {"Ani": "2015", "Valoare": 31527},
+      {"Ani": "2016", "Valoare": 30497},
+      {"Ani": "2017", "Valoare": 31147},
+      {"Ani": "2018", "Valoare": 30857},
+      {"Ani": "2019", "Valoare": 30197},
+      {"Ani": "2020", "Valoare": 22785},
+      {"Ani": "2021", "Valoare": 27024},
+      {"Ani": "2022", "Valoare": 23289}
+    ]
+  },
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {"field": "Ani", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Valoare", "type": "quantitative", "title": "Newborn"}
+  },
+  "config": {
+    "background": "white",
+    "font": "Circular Std",
+    "title": {"color": "black", "fontSize": 14, "fontWeight": 400},
+    "legend": {"labelColor": "#b4c8d8"}
+  },
+  "title": {
+    "text": "Divorces in Romania",
+    "subtitle": ["Source: National Institute for Statistics - ROMANIA", ""],
+    "fontSize": 16,
+    "anchor": "start",
+    "dx": 5
+  }
+}
