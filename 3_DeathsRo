@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Deaths in Romania",
+  "width": "container",
+  "height": 300,
+  "data": {
+    "values": [
+      {"Ani": "2012", "Valoare": 253716},
+      {"Ani": "2013", "Valoare": 247475},
+      {"Ani": "2014", "Valoare": 254965},
+      {"Ani": "2015", "Valoare": 262442},
+      {"Ani": "2016", "Valoare": 258404},
+      {"Ani": "2017", "Valoare": 262321},
+      {"Ani": "2018", "Valoare": 264963},
+      {"Ani": "2019", "Valoare": 260877},
+      {"Ani": "2020", "Valoare": 299524},
+      {"Ani": "2021", "Valoare": 335527},
+      {"Ani": "2022", "Valoare": 272953}
+    ]
+  },
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {"field": "Ani", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Valoare", "type": "quantitative", "title": "Newborn"}
+  },
+  "config": {
+    "background": "white",
+    "font": "Circular Std",
+    "title": {"color": "black", "fontSize": 14, "fontWeight": 400},
+    "legend": {"labelColor": "#b4c8d8"}
+  },
+  "title": {
+    "text": "Deaths in Romania",
+    "subtitle": ["Source: National Institute for Statistics - ROMANIA", ""],
+    "fontSize": 16,
+    "anchor": "start",
+    "dx": 5
+  }
+}
