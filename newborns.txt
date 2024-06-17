@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Newborns in Romania",
+  "width": "container",
+  "height": 300,
+  "data": {
+    "values": [
+      {"Ani": "1990", "Valoare": 314746},
+      {"Ani": "1991", "Valoare": 275275},
+      {"Ani": "1993", "Valoare": 249994},
+      {"Ani": "1994", "Valoare": 246736},
+      {"Ani": "1995", "Valoare": 236640},
+      {"Ani": "1996", "Valoare": 231348},
+      {"Ani": "1997", "Valoare": 236891},
+      {"Ani": "1998", "Valoare": 237297},
+      {"Ani": "1999", "Valoare": 234600},
+      {"Ani": "2000", "Valoare": 234521},
+      {"Ani": "2001", "Valoare": 220368},
+      {"Ani": "2002", "Valoare": 210529},
+      {"Ani": "2003", "Valoare": 212459},
+      {"Ani": "2004", "Valoare": 216261},
+      {"Ani": "2005", "Valoare": 221020},
+      {"Ani": "2006", "Valoare": 219483},
+      {"Ani": "2007", "Valoare": 214728},
+      {"Ani": "2008", "Valoare": 221900},
+      {"Ani": "2009", "Valoare": 222388},
+      {"Ani": "2010", "Valoare": 212199},
+      {"Ani": "2011", "Valoare": 196242},
+      {"Ani": "2012", "Valoare": 201104},
+      {"Ani": "2013", "Valoare": 214932},
+      {"Ani": "2014", "Valoare": 202501},
+      {"Ani": "2015", "Valoare": 206190},
+      {"Ani": "2016", "Valoare": 209641},
+      {"Ani": "2017", "Valoare": 214928},
+      {"Ani": "2018", "Valoare": 214614},
+      {"Ani": "2019", "Valoare": 215467},
+      {"Ani": "2020", "Valoare": 211273},
+      {"Ani": "2021", "Valoare": 196858},
+      {"Ani": "2022", "Valoare": 182083}
+    ]
+  },
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {"field": "Ani", "type": "ordinal", "title": "Year"},
+    "y": {"field": "Valoare", "type": "quantitative", "title": "Newborn"}
+  },
+  "config": {
+    "background": "white",
+    "font": "Circular Std",
+    "title": {"color": "black", "fontSize": 14, "fontWeight": 400},
+    "legend": {"labelColor": "#b4c8d8"}
+  },
+  "title": {
+    "text": "Newborns in Romania",
+    "subtitle": ["Source: National Institute for Statistics - ROMANIA", ""],
+    "fontSize": 16,
+    "anchor": "start",
+    "dx": 5
+  }
+}
